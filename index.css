@@ -1,0 +1,129 @@
+	* {
+  padding: 0;
+  margin: 0;
+}
+html,body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  box-sizing:border-box;
+  font-size: 12px;
+  line-height:1.2;
+  color: #a9a9a9;
+}
+a{
+  text-decoration: none;
+  color:#000;
+}
+
+    footer {
+      height: 60px;
+      display: flex;
+      background-color: 	#2E8B57;
+      
+    }
+    footer>div {
+      flex: 1;
+      text-align: center;
+      padding-top: 10px;
+    }
+    footer div .iconfont{
+      font-size:20px;
+    } 
+    footer>div>span {
+      display: block;
+    }
+    footer .active {
+      color: #ffa500
+    }
+    main {
+      height: calc(100vh - 60px);
+      /* padding: 10px; */
+      overflow: scroll;
+      -webkit-overflow-scrolling: touch; /*在ios上增加弹性*/
+    }
+    section{
+      height: calc(100vh - 60px);
+      overflow: scroll;
+    }
+    main dl {
+      padding-top:5px;
+      padding-bottom:5px;
+      border-bottom:3px solid #ccc;
+    }
+    
+  main .clearfix:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .wrap{
+      float: left;
+      display:inline-block;
+      width: 114px;
+      height:148px;
+    }
+    main dl img {
+      display: block;
+      width: 114px;
+      height:148px;
+      float: left;
+    }
+    main dl>dt {
+      margin-top:10px;
+      font-size: 16px;
+      color: #000;
+      font-weight: bold;
+      margin-left: 130px;
+      margin-bottom:5px;
+    }
+    main dl dd {
+      margin:10px;
+      margin-left:130px;
+    }
+    dd a{
+      color: #a9a9a9;
+    }
+    .score, .collect {
+      color:#ff4500;
+    }
+    section .loading {
+      text-align: center;
+      
+    }
+    section .icon-loading {
+      font-size: 18px;
+      display: inline-block;
+      padding: 5px;
+      animation:  1s load linear infinite ;
+    }
+    @keyframes load{
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+.search {
+  margin-top: 20px;
+  padding: 10px; 
+}
+.search .ipt {
+  display: inline-block;
+  height: 40px;
+  width: 80%;
+  border:1px solid  #2E8B57;
+  font-size: 18px;
+
+}
+.search .btn {
+  background-color:  #3CB371;
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+}
